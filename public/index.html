@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sai Aryan — AI/DevOps Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div class="bg-scene" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav glass" data-glass>
+  <a href="#top" class="brand">Sai Aryan</a>
+  <nav class="nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certs">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <span class="nav-status" id="nav-status">
+    <span class="status-dot"></span>
+    <span id="status-text">checking</span>
+  </span>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="rule"></span>AI-Driven DevOps Engineer</p>
+      <h1 class="hero-title">Sai<br />Aryan</h1>
+      <p class="hero-sub">
+        B.Tech Computer Science student at Jain University, building
+        full-stack applications and automating the road from commit
+        to production.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-row glass" data-glass>
+        <span class="stat-value" id="metric-projects">—</span>
+        <span class="stat-label">Projects Shipped</span>
+      </div>
+      <div class="stat-row glass" data-glass>
+        <span class="stat-value">03</span>
+        <span class="stat-label">Cloud Certifications</span>
+      </div>
+      <div class="stat-row glass" data-glass>
+        <span class="stat-value">06</span>
+        <span class="stat-label">Core Languages</span>
+      </div>
+      <div class="stat-row glass" data-glass>
+        <span class="stat-value" id="metric-status">·</span>
+        <span class="stat-label">API Status</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <span class="section-number">01</span>
+      <div>
+        <p class="eyebrow"><span class="rule"></span>Selected Work</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+    </div>
+    <div class="project-rows" id="project-list">
+      <div class="loading-row">Loading projects…</div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-head">
+      <span class="section-number">02</span>
+      <div>
+        <p class="eyebrow"><span class="rule"></span>Capabilities</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <div class="loading-row">Loading skills…</div>
+    </div>
+  </section>
+
+  <!-- CERTS -->
+  <section id="certs" class="section">
+    <div class="section-head">
+      <span class="section-number">03</span>
+      <div>
+        <p class="eyebrow"><span class="rule"></span>Credentials</p>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+    </div>
+    <div class="cert-rows">
+      <div class="cert-row">
+        <span class="cert-index">01</span>
+        <div class="cert-info">
+          <h3>Generative AI Professional</h3>
+          <p>Oracle Cloud Infrastructure</p>
+        </div>
+      </div>
+      <div class="cert-row">
+        <span class="cert-index">02</span>
+        <div class="cert-info">
+          <h3>DevOps Professional</h3>
+          <p>Oracle Cloud Infrastructure</p>
+        </div>
+      </div>
+      <div class="cert-row">
+        <span class="cert-index">03</span>
+        <div class="cert-info">
+          <h3>Architect Associate</h3>
+          <p>Oracle Cloud Infrastructure</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-head">
+      <span class="section-number">04</span>
+      <div>
+        <p class="eyebrow"><span class="rule"></span>Say Hello</p>
+        <h2 class="section-title">Contact</h2>
+      </div>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <p>Have a role, a project, or just a question? Send a message —
+        it goes straight into the database and I'll get back to you.</p>
+        <div class="info-links">
+          <a href="https://github.com/Aryan-17159" target="_blank" rel="noopener">GitHub &nbsp;/&nbsp; Aryan-17159</a>
+          <a href="https://linkedin.com/in/m-v-sai-aryan" target="_blank" rel="noopener">LinkedIn &nbsp;/&nbsp; m-v-sai-aryan</a>
+        </div>
+      </div>
+      <form id="contact-form" class="contact-form glass" data-glass>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required maxlength="100" placeholder="Your name" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required maxlength="150" placeholder="you@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" maxlength="150" placeholder="Optional" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required maxlength="5000" rows="5" placeholder="What's on your mind?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+        <p class="form-status" id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="rule"></span>
+  <p>Built with Node.js, Express, and MongoDB &middot; <span id="footer-year"></span></p>
+</footer>
+
+<script src="/js/liquid-glass.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
