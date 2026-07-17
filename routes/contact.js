@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const rateLimit = require('express-rate-limit');
 const Message = require('../models/Message');
+const { sendContactNotification } = require('../utils/mailer');
 
 const contactLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -36,6 +37,11 @@ router.post('/', contactLimiter, async (req, res) => {
 
     const doc = new Message({ name, email, subject, message });
     await doc.save();
+
+    // Never let a failed email break the request - the message is already
+    // safely saved in MongoDB regardless of email delivery status.
+    await sendContactNotification({ name, email, subject, message });
+
     res.status(201).json({ message: 'Message sent successfully' });
   } catch (err) {
     res.status(500).json({ error: 'Failed to send message' });
